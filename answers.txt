@@ -1,0 +1,113 @@
+/******************************************************************************
+** DIT181 Datastrukturer och algoritmer, LP3 2021
+** Lab 1: Sorting, Complexity
+*******************************************************************************/
+
+Group members:
+- [...]
+- [...]
+- [...]
+
+/******************************************************************************
+** Task: Figuring out the complexity
+**
+** 1. What is the complexity of running each of the following algorithms
+**    on each of the following kinds of inputs?
+**    You only have to decide between quadratic or faster than quadratic.
+******************************************************************************/
+
+Insertion.java on:
+
+- random inputs:      [Quadratic] [Faster than quadratic]
+- 95% sorted inputs:  [Quadratic] [Faster than quadratic]
+- sorted inputs:      [Quadratic] [Faster than quadratic]
+
+Quick.java on:
+
+- random inputs:      [Quadratic] [Faster than quadratic]
+- 95% sorted inputs:  [Quadratic] [Faster than quadratic]
+- sorted inputs:      [Quadratic] [Faster than quadratic]
+
+Merge.java on:
+
+- random inputs:      [Quadratic] [Faster than quadratic]
+- 95% sorted inputs:  [Quadratic] [Faster than quadratic]
+- sorted inputs:      Faster than quadratic
+
+/******************************************************************************
+** 2. How did you check if an algorithm had quadratic complexity or not?
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** Task: Improving quicksort
+**
+** 3. Do the following changes affect the complexity of quicksort
+**    on any kind of input data? If so, what is it that changes?
+******************************************************************************/
+
+Shuffling the array first:
+[no] [yes+reason]
+
+
+Median-of-three pivot selection:
+[no] [yes+reason]
+
+
+Insertion sort for small arrays:
+[no] [yes+reason]
+
+/******************************************************************************
+** 4. What is a good cutoff to use for insertion sort?
+**    Explain briefly how you came to this answer.
+**    Remember that you should try to find the answer in a systematic way.
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** 5. Which combination of improvements gives the best performance?
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** Appendix: General information
+**
+** A. Approximately how many hours did you spend on the assignment?
+******************************************************************************/
+
+[..group member..]:  [..hours..]
+[..group member..]:  [..hours..]
+[..group member..]:  [..hours..]
+
+
+/******************************************************************************
+** B. Are there any known bugs / limitations?
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** C. Did you collaborate with any other students on this lab?
+**    If so, please write in what way you collaborated and with whom.
+**    Also include any resources (including the web) that you may
+**    may have used in creating your design.
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** D. Describe any serious problems you encountered.                    
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** E. List any other comments here.
+**    Feel free to provide any feedback on how much you learned 
+**    from doing the assignment, and whether you enjoyed it.                                             
+******************************************************************************/
+
+[...]

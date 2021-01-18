@@ -1,0 +1,55 @@
+# This is a gitignore file.
+# It tells git which files and directories it should avoid tracking.
+# For an explanation of the format, see the following link:
+#   https://git-scm.com/docs/gitignore
+# At the moment, it has been configured so that IDE-specific files are not considered for tracking.
+# If all members of your group use the same IDE and you wish to share some project configuration files, you must edit this file as appropriate before git allows you to track them.
+
+### General ###
+
+# Backup files
+*~
+\#*#
+*.bak
+
+# Vim swap files
+*.swo
+*.swp
+
+### Java ###
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Virtual machine crash logs
+hs_err_pid*
+
+### Eclipse ###
+
+/.classpath
+/.project
+/.settings/
+
+### IntelliJ ###
+
+# Configuration files
+/.idea/
+/*.ipr
+/*.iml
+
+# Output directory
+/out/
+
+### NetBeans ###
+
+# Configuration files
+/nbproject/
+
+# Build and distribution files
+/build/
+/nbbuild/
+/dist/
+/nbdist/
