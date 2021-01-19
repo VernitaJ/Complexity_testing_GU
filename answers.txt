@@ -4,9 +4,9 @@
 *******************************************************************************/
 
 Group members:
-- [...]
-- [...]
-- [...]
+- [Drake Axelrod]
+- [Vernita Gouws]
+- [Axel Lindmark]
 
 /******************************************************************************
 ** Task: Figuring out the complexity
@@ -18,27 +18,28 @@ Group members:
 
 Insertion.java on:
 
-- random inputs:      [Quadratic] [Faster than quadratic]
-- 95% sorted inputs:  [Quadratic] [Faster than quadratic]
-- sorted inputs:      [Quadratic] [Faster than quadratic]
+- random inputs:      Quadratic
+- 95% sorted inputs:  Quadratic
+- sorted inputs:      Faster than quadratic
 
 Quick.java on:
 
-- random inputs:      [Quadratic] [Faster than quadratic]
-- 95% sorted inputs:  [Quadratic] [Faster than quadratic]
-- sorted inputs:      [Quadratic] [Faster than quadratic]
+- random inputs:      Faster than quadratic
+- 95% sorted inputs:  Faster than quadratic
+- sorted inputs:      Quadratic
 
 Merge.java on:
 
-- random inputs:      [Quadratic] [Faster than quadratic]
-- 95% sorted inputs:  [Quadratic] [Faster than quadratic]
+- random inputs:      Faster than quadratic
+- 95% sorted inputs:  Faster than quadratic
 - sorted inputs:      Faster than quadratic
 
 /******************************************************************************
 ** 2. How did you check if an algorithm had quadratic complexity or not?
 ******************************************************************************/
 
-[...]
+[Google, in addition to deductive reasoning if a sorting algorithm seemed to increase exponentially then it would be
+following a quadratic style of growth]
 
 /******************************************************************************
 ** Task: Improving quicksort
@@ -48,15 +49,19 @@ Merge.java on:
 ******************************************************************************/
 
 Shuffling the array first:
-[no] [yes+reason]
+[no]
 
 
 Median-of-three pivot selection:
-[no] [yes+reason]
-
+[yes]
+by using a universal pivot point that is located at the middle of the arrays it allows for more
+efficient splitting which means that overall the entire array can be sorted faster. Essentially
+by creating more equal partitions the functions can more economically sort the arrays.
 
 Insertion sort for small arrays:
-[no] [yes+reason]
+[yes]
+Because insertion sort has a smaller complexity rate then quicksort when sorting arrays of a smaller size hence when we use the
+cutoff point of 70 the quicksort method switches to insertion which in turn increases the speed of the sorting.
 
 /******************************************************************************
 ** 4. What is a good cutoff to use for insertion sort?
@@ -64,13 +69,18 @@ Insertion sort for small arrays:
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-[...]
+a good cutoff that we found was 70
+we came to this answer by systematically testing values and incrementing or decrementing until we arrived at 70.
+when you start using cutoff higher then 100 then smaller array sorting get slower.
 
 /******************************************************************************
 ** 5. Which combination of improvements gives the best performance?
 ******************************************************************************/
 
-[...]
+shuffle first: off
+median of three: on
+cutoff: 70
+executionTimeReport("Quick.java: quicksort with all improvements", new Quick(false, true, 70)::sort);
 
 /******************************************************************************
 ** Appendix: General information
@@ -78,16 +88,16 @@ Insertion sort for small arrays:
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[..group member..]:  [..hours..]
-[..group member..]:  [..hours..]
-[..group member..]:  [..hours..]
+[Drake]:  [2]
+[Vernita]:  [2]
+[Axel]:  [2]
 
 
 /******************************************************************************
 ** B. Are there any known bugs / limitations?
 ******************************************************************************/
 
-[...]
+We had bugs when we attempted add to functions because we sent values instead of indexes.
 
 /******************************************************************************
 ** C. Did you collaborate with any other students on this lab?
@@ -96,13 +106,16 @@ Insertion sort for small arrays:
 **    may have used in creating your design.
 ******************************************************************************/
 
-[...]
+we were in a zoom call the entire time working together, so we think that it was an
+100% collaborative effort.
+we used https://code4coding.com/java-program-to-find-middle-of-three-numbers/
+to help expedite the process of the if statements for the median sort.
 
 /******************************************************************************
 ** D. Describe any serious problems you encountered.                    
 ******************************************************************************/
 
-[...]
+we did not have any serious problems
 
 /******************************************************************************
 ** E. List any other comments here.
@@ -110,4 +123,4 @@ Insertion sort for small arrays:
 **    from doing the assignment, and whether you enjoyed it.                                             
 ******************************************************************************/
 
-[...]
+no other comments
