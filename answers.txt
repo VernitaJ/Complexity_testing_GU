@@ -98,6 +98,7 @@ executionTimeReport("Quick.java: quicksort with all improvements", new Quick(fal
 ******************************************************************************/
 
 We had bugs when we attempted add to functions because we sent values instead of indexes.
+no bugs in submission that we could find.
 
 /******************************************************************************
 ** C. Did you collaborate with any other students on this lab?
