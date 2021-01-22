@@ -61,7 +61,7 @@ by creating more equal partitions the functions can more economically sort the a
 Insertion sort for small arrays:
 [yes]
 Because insertion sort has a smaller complexity rate then quicksort when sorting arrays of a smaller size hence when we use the
-cutoff point of 70 the quicksort method switches to insertion which in turn increases the speed of the sorting.
+cutoff point of 50 the quicksort method switches to insertion which in turn increases the speed of the sorting.
 
 /******************************************************************************
 ** 4. What is a good cutoff to use for insertion sort?
@@ -69,8 +69,8 @@ cutoff point of 70 the quicksort method switches to insertion which in turn incr
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-a good cutoff that we found was 70
-we came to this answer by systematically testing values and incrementing or decrementing until we arrived at 70.
+a good cutoff should be around 50 elements as insertion sort more efficient on smaller arrays
+we came to this answer by systematically testing values and incrementing or decrementing until we arrived at 50.
 when you start using cutoff higher then 100 then smaller array sorting get slower.
 
 /******************************************************************************
@@ -79,8 +79,8 @@ when you start using cutoff higher then 100 then smaller array sorting get slowe
 
 shuffle first: off
 median of three: on
-cutoff: 70
-executionTimeReport("Quick.java: quicksort with all improvements", new Quick(false, true, 70)::sort);
+cutoff: 50
+executionTimeReport("Quick.java: quicksort with all improvements", new Quick(false, true, 50)::sort);
 
 /******************************************************************************
 ** Appendix: General information
