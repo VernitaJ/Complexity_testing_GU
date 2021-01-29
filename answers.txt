@@ -38,8 +38,9 @@ Merge.java on:
 ** 2. How did you check if an algorithm had quadratic complexity or not?
 ******************************************************************************/
 
-[In addition to deductive reasoning and mathematics we used Google. When a sorting algorithm increased quadratically as the number of inputs grew,
-we reasoned that it would be following a quadratic style of growth.
+[We used deductive reasoning and mathematics. When a sorting algorithm increased quadratically as the number of inputs grew,
+we reasoned that it would be following a quadratic style of growth. For example, when there are 10,000 elements and the runtime is 1second,
+then when the elements increase to 30,000 elements, we expect the runtime to be around 9seconds.
 Quicksort - The complexity is N^2 for the sorted array because it is using the first element as the pivot, which is the lowest number in a sorted array.
 The complexity for the Random and 95% sorted arrays are faster than quadratic as these arrays use more efficient pivots.
 Insertion sort - The complexity is N^2 for Random and 95% Sorted arrays, because the algorithm iterates over the entire array multiple times in order to sort the array.
@@ -58,19 +59,19 @@ what Quicksort tries to emulate with the 'median-of-three' concept.
 ******************************************************************************/
 
 Shuffling the array first:
-[no]
-
+[yes]
+According to our test runs, shuffling the arrays before sorting them increased the runtime slightly on the Random array, approximately tripled the time on 95% sorted,
+and dramatically increased the time on the the Sorted array.
 
 Median-of-three pivot selection:
 [yes]
-by using a universal pivot point that is located at the middle of the arrays it allows for more
-efficient splitting which means that overall the entire array can be sorted faster. Essentially
-by creating more equal partitions the functions can more economically sort the arrays.
+By using pivot point that is located at the middle of the arrays it allows for more efficient splitting in the Sorted array,
+which means that overall the entire array can be sorted faster.
+On non-sorted arrays the algorithm selects a pivot point that is towards the centre of the array, essentially creating more equal partitions where the methods can more
+economically sort the arrays.
 
 Insertion sort for small arrays:
-[yes]
-Because insertion sort has a smaller complexity rate then quicksort when sorting arrays of a smaller size hence when we use the
-cutoff point of 50 the quicksort method switches to insertion which in turn increases the speed of the sorting.
+[no]
 
 /******************************************************************************
 ** 4. What is a good cutoff to use for insertion sort?
@@ -78,18 +79,18 @@ cutoff point of 50 the quicksort method switches to insertion which in turn incr
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-a good cutoff should be around 50 elements as insertion sort more efficient on smaller arrays
-we came to this answer by systematically testing values and incrementing or decrementing until we arrived at 50.
-when you start using cutoff higher then 100 then smaller array sorting get slower.
+A good cutoff would be around 50 elements as insertion sort more efficient on smaller arrays we came
+to this answer by systematically testing values and incrementing or decrementing until we arrived at 50.
+When you start using a cutoff point higher than 100 then smaller array sorting get slower.
 
 /******************************************************************************
 ** 5. Which combination of improvements gives the best performance?
 ******************************************************************************/
 
-shuffle first: off
-median of three: on
-cutoff: 50
-executionTimeReport("Quick.java: quicksort with all improvements", new Quick(false, true, 50)::sort);
+Shuffle first: off
+Median of three: on
+Cutoff: 50
+ExecutionTimeReport("Quick.java: quicksort with all improvements", new Quick(false, true, 50)::sort);
 
 /******************************************************************************
 ** Appendix: General information
@@ -97,9 +98,9 @@ executionTimeReport("Quick.java: quicksort with all improvements", new Quick(fal
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[Drake]:  [2]
-[Vernita]:  [2]
-[Axel]:  [2]
+[Drake]:  [3]
+[Vernita]:  [3]
+[Axel]:  [3]
 
 
 /******************************************************************************
@@ -107,7 +108,7 @@ executionTimeReport("Quick.java: quicksort with all improvements", new Quick(fal
 ******************************************************************************/
 
 We had bugs when we attempted add to functions because we sent values instead of indexes.
-no bugs in submission that we could find.
+There were no bugs in submission that we could find.
 
 /******************************************************************************
 ** C. Did you collaborate with any other students on this lab?
@@ -116,16 +117,16 @@ no bugs in submission that we could find.
 **    may have used in creating your design.
 ******************************************************************************/
 
-we were in a zoom call the entire time working together, so we think that it was an
+We were in a zoom call the entire time working together, so we think that it was an
 100% collaborative effort.
-we used https://code4coding.com/java-program-to-find-middle-of-three-numbers/
+We used https://code4coding.com/java-program-to-find-middle-of-three-numbers/
 to help expedite the process of the if statements for the median sort.
 
 /******************************************************************************
 ** D. Describe any serious problems you encountered.                    
 ******************************************************************************/
 
-we did not have any serious problems
+We did not have any serious problems
 
 /******************************************************************************
 ** E. List any other comments here.
