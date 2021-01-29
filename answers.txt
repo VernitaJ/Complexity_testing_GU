@@ -38,8 +38,17 @@ Merge.java on:
 ** 2. How did you check if an algorithm had quadratic complexity or not?
 ******************************************************************************/
 
-[Google, in addition to deductive reasoning if a sorting algorithm seemed to increase exponentially then it would be
-following a quadratic style of growth]
+[In addition to deductive reasoning and mathematics we used Google. When a sorting algorithm increased quadratically as the number of inputs grew,
+we reasoned that it would be following a quadratic style of growth.
+Quicksort - The complexity is N^2 for the sorted array because it is using the first element as the pivot, which is the lowest number in a sorted array.
+The complexity for the Random and 95% sorted arrays are faster than quadratic as these arrays use more efficient pivots.
+Insertion sort - The complexity is N^2 for Random and 95% Sorted arrays, because the algorithm iterates over the entire array multiple times in order to sort the array.
+However, the best case scenario is that the array is already sorted, in which case there will only be one iteration of the entire array where the algorithm would
+accept the order and complete its run - Making the complexity for the sorted array O(N).
+Merge Sort - For all arrays in Merge Sort the runtime is faster than quadratic O(NlogN). This is because the algorithm selects a median index in the array,
+which leads to an increased equality in the split sections. Naturally the increased equality improves the efficiency of the algorithm, which is
+what Quicksort tries to emulate with the 'median-of-three' concept.
+]
 
 /******************************************************************************
 ** Task: Improving quicksort
