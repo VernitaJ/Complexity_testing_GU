@@ -12,7 +12,6 @@ public class Bench {
      * You can choose which sorting algorithms to run and benchmark.
      */
     public static void main(final String[] args) {
-        executionTimeReport("Quick.java: quicksort with all improvements", new Quick(true, true, 50)::sort);
         executionTimeReport("Quick.java: quicksort with all improvements", new Quick(false, true, 50)::sort);
         executionTimeReport("Quick.java: quicksort", new Quick(false, false, 0)::sort);
         executionTimeReport("Insertion.java: insertion sort", Insertion::sort);

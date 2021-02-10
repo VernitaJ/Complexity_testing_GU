@@ -60,15 +60,16 @@ what Quicksort tries to emulate with the 'median-of-three' concept.
 
 Shuffling the array first:
 [yes]
-According to our test runs, shuffling the arrays before sorting them increased the runtime slightly on the Random array, approximately tripled the time on 95% sorted,
-and dramatically increased the time on the the Sorted array.
+According to our test runs, shuffling the arrays before sorting them increased the runtime slightly on the Random array - but it remains faster than quadratic
+Approximately tripled the time on 95% sorted, but still faster than quadratic
+Dramatically increased the time on the the Sorted array, which was already quadratic, and thus remains so.
 
 Median-of-three pivot selection:
 [yes]
-By using pivot point that is located at the middle of the arrays it allows for more efficient splitting in the Sorted array,
-which means that overall the entire array can be sorted faster.
-On non-sorted arrays the algorithm selects a pivot point that is towards the centre of the array, essentially creating more equal partitions where the methods can more
-economically sort the arrays.
+On the Random array, the runtime increases with a slight amount, keeping to faster than quadratic runtime.
+On 95% sorted array, the runtime improves a lot, keeping a faster than quadratic runtime.
+On Sorted arrays, the runtime increases dramatically, making its runtime faster than quadratic.
+
 
 Insertion sort for small arrays:
 [no]
